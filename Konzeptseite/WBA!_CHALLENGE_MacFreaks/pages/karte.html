@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+Template Name: Expression
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
+<head>
+<title>Karte</title>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta name="description" content="Google Maps API V3: Custom Directions Panel" />
+<meta name="keywords" content="Google Maps API V3, Custom Directions Panel, jQuery, jQuery tutorials, thewebstorebyg wordpress code blog" />
+<link href="../layout/styles/style.css" rel="stylesheet" type="text/css" media="all">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<style>
+  #map{
+    height:0;
+    width:900px;
+    margin-left: 350px;
+  }
+</style>
+
+</head>
+<body id="top">
+  <div class="wrapper navtop">
+    <header id="header" class="clear">
+      <nav id="mainav">
+        <ul class="clear">
+          <li><img class="ictop" src="../images/navtop/bluetooth.png" alt=""></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li>07. Dez 2017</li>
+          <li>12:50</li>
+        </ul>
+      </nav>
+      <!-- ################################################################################################ -->
+    </header>
+  </div>
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <!-- ################################################################################################ -->
+    <div id="logo">
+      <a href="../index.html"><img class="logo" src="../images/logo.png" alt=""></a>
+    </div>
+    <nav id="mainav">
+      <ul class="clear">
+        <li><a href="gallery.html"><img class="icon" src="../images/music.png" alt=""></a></li>
+        <li class="active"><a href="karte.html"><img class="icon" src="../images/karte.png" alt=""></a></li>
+        <li><a href="kontakte.html"><img class="icon" src="../images/kontakte.png" alt=""></a></li>
+        <li><a href="kalender.html"><img class="icon" src="../images/calendar.png" alt=""></a></li>
+        <li><a href="wetter.html"><img class="icon" src="../images/wetter.png" alt=""></a></li>
+        <li><a class="drop" href="#"><img class="icon" src="../images/pfeil.png" alt=""></a>
+          <ul>
+            <li><a href="pages/gallery.html">Service</a></li>
+            <li><a href="pages/full-width.html">Helligkeit</a></li>
+            <li><a href="pages/sidebar-left.html">Sicherheit</a></li>
+            <li><a href="pages/sidebar-right.html">Scheibenwischer</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!-- ################################################################################################ -->
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row2" style="background-image:url(../images/demo/slides/2.png)">
+  <div class="overlay">
+    <!-- ############################################################################################################# -->
+    <!-- ############################################################################################################# -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main id="container" class="clear">
+    <!-- container body -->
+    <!-- ########################################################################################## -->
+    <div id="mapCanvas">&#160;</div>
+    <div id="directionsPanel">
+        <a href="#geoLocation" id="useGPS">Use My Location</a>
+        <p class="or">[OR]</p>
+        <div class="directionInputs">
+            <form>
+                <p>
+                    <label>A</label>
+                    <input type="text" value="" id="dirSource" />
+                </p>
+                <p>
+                    <label>B</label>
+                    <input type="text" value="" id="dirDestination" />
+                </p>
+                <a href="#getDirections" id="getDirections">Get Directions</a>
+                <a href="#reset" id="paneReset">Reset</a>
+            </form>
+        </div>
+        <div id="directionSteps">
+            <p class="msg">Direction Steps Will Render Here</p>
+        </div>
+        <a href="#toggleBtn" id="paneToggle" class="out">&lt;</a>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBen5lb47oRubWGFMdSeax-b9oiMQ5E42o&callback=init&libraries=places&sensor=false" async defer></script>
+    <script src="../js/directions.js"></script>
+    <script>
+    function init() {
+        initMap();
+    }
+    </script>
+    <div id="map"></div>
+
+
+
+
+    <!-- ########################################################################################## -->
+    <!-- / container body -->
+    <div class="clear"></div>
+  </main>
+</div>
+
+<div class="wrapper row5">
+  <div id="copyright" class="clear">
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+</body>
+</html>
